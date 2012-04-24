@@ -1,5 +1,5 @@
 #!/bin/bash
-# 2012-04-23, Created by Hagen Fuchs <hfuchs@pks.mpg.de>
+# 2012-04-23, Created by Hagen Fuchs <code@hfuchs.net>
 
 debug=0
 
