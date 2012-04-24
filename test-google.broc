@@ -1,0 +1,8 @@
+#!/bin/bash
+
+. broccolli.sh
+
+When I visit "http://www.google.com/webhp?hl=" I should see "Sign in"
+
+When I visit "http://www.google.com/webhp?hl=" I should see "Garbage"
+
