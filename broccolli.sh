@@ -25,7 +25,7 @@ see() {
     [ $debug -ne 0 ] && echo "[DEBUG] see() called."
     see_success=1
     see_phrase="$1"
-    echo "$content_to_see" | grep -q "$see_phrase"
+    echo "$content_to_see" | html2text | grep -q "$see_phrase"
     [ $? == 0 ] && see_success=0 && return 0
     return 1
 }
@@ -67,4 +67,6 @@ When() {
     fi
 
     [ $debug -ne 0 ] && echo "[DEBUG] Success for test of '$visit_url'."
+
+    return 0
 }
